@@ -27,7 +27,7 @@ class OfflineItemsRepository(private val itemDao: ItemDao) : ItemsRepository {
         return itemDao.getItem(id)
     }
 
-    override suspend fun inserItem(item: Item) {
+    override suspend fun insertItem(item: Item) {
         return itemDao.insert(item)
     }
 

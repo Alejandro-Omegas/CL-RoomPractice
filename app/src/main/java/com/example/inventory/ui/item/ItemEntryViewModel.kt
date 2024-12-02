@@ -52,7 +52,7 @@ class ItemEntryViewModel(private val itemRepository: ItemsRepository) : ViewMode
 
     suspend fun saveItem() {
         if (validateInput()) {
-            itemRepository.inserItem(itemUiState.itemDetails.toItem())
+            itemRepository.insertItem(itemUiState.itemDetails.toItem())
         }
     }
 }
